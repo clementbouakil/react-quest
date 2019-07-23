@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import "./App.css";
 
 import Quotes from "../quotes/Quotes";
 import Header from "../header/Header";
+
+import "./App.css";
 
 class App extends Component {
   render() {
