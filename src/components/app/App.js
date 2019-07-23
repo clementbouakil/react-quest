@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Quote from "./Quote";
-import Quotes from "./Quotes";
+import Quote from "../quote/Quote";
+import Quotes from "../quotes/Quotes";
+import Header from "../header/Header";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Simpsons Quotes</h1>
-        </header>
+        <Header />
         <Quote
           quote="I believe the children are the future... Unless we stop them now!"
           character="Homer Simpson"
