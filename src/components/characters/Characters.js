@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios  from "axios";
 
 import "./Characters.css";
 
@@ -10,11 +11,26 @@ class Characters extends Component {
         characters: [],
         isLoaded: false
     }
+    
+    //  * fetch
+    // getCharacters = () => {
+    //     fetch("https://melroune.github.io/starwars-api/api/all.json")
+    //     .then(res => res.json())
+    //     .then(res => this.setState({characters: res, isLoaded: true }))
+    // }
 
-    getCharacters = () => {
-        fetch("https://melroune.github.io/starwars-api/api/all.json")
-        .then(res => res.json())
-        .then(res => this.setState({characters: res, isLoaded: true }))
+    // * axios classique
+    // getCharacters = () => {
+    //     axios.get("https://melroune.github.io/starwars-api/api/all.json")
+    //     .then(res => this.setState({characters: res.data, isLoaded: true }));
+    // }
+
+    // * async await
+    getCharacters = async () => {
+        const result = await axios.get(
+            "https://melroune.github.io/starwars-api/api/all.json"
+        );
+        this.setState({ characters: result.data, isLoaded: true});
     }
 
     componentDidMount() {
