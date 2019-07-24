@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Character from "../characters/Characters";
+import Character from "../Characters/Characters";
 
 import "./App.css";
 
