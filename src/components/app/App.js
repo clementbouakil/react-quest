@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import Quotes from "../quotes/Quotes";
-import Header from "../header/Header";
+import Character from "../characters/Characters";
 
 import "./App.css";
 
@@ -9,8 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Quotes />
+        <Character />
       </div>
     );
   }
