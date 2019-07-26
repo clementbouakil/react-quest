@@ -1,7 +1,10 @@
-.Header-logo {
-  animation: Header-logo-spin infinite 20s linear;
-  height: 40vmin;
+img {
+  height: 30vmin;
   pointer-events: none;
+}
+
+img.work {
+  animation: logo-rotation-right infinite 10s linear;
 }
 
 .Header-header {
@@ -15,11 +18,37 @@
   color: white;
 }
 
-@keyframes Header-logo-spin {
+@keyframes logo-rotation-right {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.working {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.working button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  font-size: 15pt;
+  font-weight: bolder;
+}
+
+.working button.work {
+  background-color: greenyellow;
+}
+
+.working button.donuts {
+  background-color: red;
 }

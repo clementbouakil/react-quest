@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import "./App.css";
 
-import Lamp from "../Lamp/Lamp";
 import Header from "../Header/Header";
 
 class App extends Component {
@@ -10,7 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Lamp />
       </div>
     );
   }
